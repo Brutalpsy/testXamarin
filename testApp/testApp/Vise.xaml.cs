@@ -29,7 +29,6 @@ namespace testApp
                 x.Price += 22.12M;
                 return x;
             }).ToObservableCollection<Pie>();
-
             DisplayAlert("Price changed", "changed", "Cancel");
         }
     }
