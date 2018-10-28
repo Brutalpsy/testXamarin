@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:testApp"
+             x:Class="testApp.MainPage">
+
+    <Grid>
+
+    <Grid BackgroundColor="Wheat" RowSpacing="0" ColumnSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1" Margin="5" BackgroundColor="White" RowSpacing="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="50"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0"
+                   Text="{Binding Id}" Margin="1"></Label>
+            <Label Grid.Row="0" Grid.Column="1"
+                   Text="{Binding Name}" Margin="1"></Label>
+            <Label Grid.Row="0" Grid.Column="2"
+                   Text="{Binding Price}"  Margin="1"></Label>
+        </Grid>
+        
+    </Grid>
+        <Button Clicked="Button_Clicked_1" Text="updatePrice" Grid.Row="3"></Button>
+    </Grid>
+
+</ContentPage>
