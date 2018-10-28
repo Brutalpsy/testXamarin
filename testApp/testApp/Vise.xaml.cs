@@ -35,8 +35,6 @@ namespace testApp
                 return x;
             }).ToObservableCollection<Pie>();
 
-    
-
             DisplayAlert("Price changed", "changed", "Cancel");
         }
     }
