@@ -24,11 +24,6 @@ namespace testApp
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-
-            //var firstPie = pies.SingleOrDefault(x =>x.Id==1);
-
-            //firstPie.Price += 22.11M;
-
             pies = pies.Select(x =>
             {
                 x.Price += 22.12M;
